@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Bootstrap example</title>
+        <meta charset="uft-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link href="style.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    </head>
+    <body>
+       <div class="container">
+        <div class="head"><img src="fb.svg" id="fb-image"></div>
+        <br>
+        <div class="content">
+          <div class="head-2"><h2>Create a new account</h2></div>
+          <div class="sub-head"><h4>Its quick and easy</h4></div>
+          <hr>
+          <div class="content-sub">
+            <form action="#" class="sForm" id="sForm">
+            <input type="text" class="namef" name="fname" placeholder="First name">
+            <input type="text" class="names" name="sname" placeholder="Surname">
+            <input type="text" class="num-email" name="nm" placeholder="Mobile number or email">
+            <input type="password" class="pas" name="pwd" placeholder="New password">
+            <div class="div-label">
+              <label>Date of birth</label>
+            </div>
+            <select class="day">
+              <option>Day</option>
+            </select>
+            <select class="month">
+              <option>Month</option>
+            </select>
+            <select class="year">
+              <option>Year</option>
+            </select>
+            <div class="div-gender">
+              <label>Gender</label>
+            </div>
+            <div class="rdo">
+            <label for="m" id="ml">Male</label>
+            <input type="radio" id="m" name="nr">
+            <label for="f" id="fl">Female</label>
+            <input type="radio" id="f" name="nr">
+            <label for="c" id="cl">Custom</label>
+            <input type="radio" id="c" name="nr">
+            </div>
+            <div class="p1">
+              <p>People who use our service may have uploaded your contact information to Facebook. <a href="#"> Learn more.</a></p>
+            </div>
+            <div class="p2">
+              <p>By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+            </div>
+            <br>
+            <div class="div-btn">
+              <button type="submit" id="btn">Sign Up</button>
+            </div>
+            <br>
+            <div class="div-lnk">
+              <a href="login.html" id="lgn">Already have an account ?</a>
+              <br>
+            </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer-sub">
+<pre>
+<a href="#" id="en">English</a> <a href="#" class="ms">മലയാളം  தமிழ்  ಕನ್ನಡ  हिन्दी  اردو বাংলা  తెలుగు  Español  Português (Brasil) Français (France)
+</a>
+<hr>
+<a href="#" class="ms">Sign Up    Log in    Messenger    Facebook Lite    Video    Places    Games   Marketplace    Meta Pay   Meta Store    Meta Quest   Instagram   Threads    Fundraisers
+Services  Voting  Information Centre  Privacy Policy  Privacy Centre  Groups  About  Create ad   Create Page   Developers   Careers   Cookies    AdChoices  
+Terms   Help   Contact uploading and non-users   Settings   Activity    log
+</a>
+<a href="#" id="meta">Meta &copy; 2023</a>
+</pre>
+          </div>
+        </div>
+       </div> 
+       <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+       <script>
+        $(document).ready(function(){
+          $("#sForm").validate({
+            rules:{
+              fname:{
+                required:true,
+                minlength:4
+              },
+              nm:{
+                email:true,
+                Number:true,
+                required:true
+              },
+              pwd:{
+                required:true,
+                minlength:6,
+                maxlength:20,
+                checklower:true,
+                checkupper:true,
+                checkdigit:true
+              }
+            }
+          })
+        })
+       </script>
+      </body>
+</html>

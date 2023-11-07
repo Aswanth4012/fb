@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    background-color: #fff;
+}
+.container{
+    background-color: #f0f2f5;
+    
+}
+.head{
+    width: fit-content;
+    margin: auto;
+}
+.head-2{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+.sub-head{
+    width: fit-content;
+    margin: auto;
+    height: fit-content;
+}
+#fb-image{
+    width: 303px;
+    height: 100px;
+}
+.content{
+    margin: auto;
+    width: 435px;
+    height: 580px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.content-sub{
+    padding-left: 10px;
+}
+.namef{
+    padding-left: 10px;
+    width: 190px;
+    height: 40px;
+}
+.names{
+    padding-left: 10px;
+    margin-left: px;
+    width: 190px;
+    height: 40px;
+}
+.num-email{
+    height: 40px;
+    width: 399px;
+    margin-top: 10px;
+    padding-left: 11px;
+}
+.div-label{
+    margin-top: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+.div-gender{
+    margin-top: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+.day{
+    margin-top: 5px;
+    width: 125px;
+    height: 36px;
+}
+.month{
+    margin-left: 10px;
+    width: 125px;
+    height:36px;
+}
+.year{
+    margin-left: 10px;
+    height: 36px;
+    width: 125px;
+}
+.pas{
+    padding-left: 11px;
+    margin-top: 10px;
+    height: 40px;
+    width: 399px;
+}
+.rdo{
+    margin-top: 10px;
+}
+#fl{
+    margin-left: 50px;
+}
+#cl{
+    margin-left: 50px;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 11px;
+    color: #777;
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+}
+.div-btn{
+    width: fit-content;
+    
+    margin: auto;
+}
+#btn{
+    width: 194px;
+    height: 36px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+#btn:hover{
+    color: rgb(245, 239, 239);
+}
+.div-lnk{
+    width: fit-content;
+    margin: auto;
+}
+#lgn{
+    font-size: 17px;
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #1877f2;
+}
+h2{
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+
+}
+h4{
+    font-weight: lighter;
+    color: #606770;
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+}
+label{
+    color:#606770;;
+    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+}
+.footer{
+    margin-top: 45px;
+    width: 100%;
+    background-color: white;
+}
+input[type=text]{
+    border-color: #ccd0d5;
+    border-width: 1px;
+    border-style: solid;
+}
+input[type=password]{
+    border-color: #ccd0d5;
+    border-width: 1px;
+    border-style: solid;
+}
+select{
+    border-color: #ccd0d5;
+    border-width: 1px;
+    border-style: solid;
+}
+#en{
+    font-size: 11px;
+    color: #868788;
+}
+#meta{
+    font-size: 11px;
+    color: #868788;
+}
+.ms{
+    font-size: 11px;
+    color: #385898;
+}
+.footer-sub{
+    margin: auto;
+    /*border-color: black;
+    border-style: solid;*/
+    width: fit-content;
+}

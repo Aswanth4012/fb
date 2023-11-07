@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login page</title>
+        <meta charset="uft-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body{
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .container{
+            background-color: #f0f2f5
+        }
+        .content{
+            width: 396px;
+            background-color: #fff;
+            margin: auto;
+            border-radius: 6px;
+            border-color: #e3e5e7;
+            border-style: solid;
+            border-width: 1px;
+            /*box-shadow: #393a3a;*/
+        }
+        .content-head{
+            width: 396px;
+            height: 62px;
+            padding-top: 5px;
+        }
+        .content-form{
+            width: 396px;
+            height: 315px;
+        }
+        .sub-head{
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+        }
+        .head-logo{
+            margin: auto;
+            width: fit-content;
+        }
+        img{
+            width: 240px;
+            height: 79px;
+        }
+        input[type=text]{
+            height: 52px;
+            width: 364px;
+            margin-left: 11px;
+            border-style: solid;
+            border-width: 0.5px;
+            border-color: #c0c1c2;
+            border-radius: 6px;
+            padding-left: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input[type=password]{
+            height: 52px;
+            width: 364px;
+            margin-left: 11px;
+            margin-top: 11px;
+            border-style: solid;
+            border-width: 0.5px;
+            border-color: #c0c1c2;
+            border-radius: 6px;
+            padding-left: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .sub-btn{
+            height: 48px;
+            width: 371px;
+            margin-left: 11px;
+            margin-top: 11px;
+            background-color: #1877f2;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .sub-btn:hover{
+            background-color: #106ce4;
+        }
+        .fgt-lnk{
+            padding-top: 20px;
+            margin: auto;
+            width: fit-content;
+        }
+        #lnk{
+            /*text-decoration: none;*/
+            color: #1877f2;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h4{
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            color: #1c1e21;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="head-logo">
+                <img src="fb.svg">
+            </div>
+            <div class="content">
+                <div class="content-head">
+                    <div class="sub-head"><h4>Log in to Facebook</h4></div>
+                </div>
+                <div class="content-form">
+                    <form id="lgnForm" action="#">
+                        <input type="text" class="email-phone" id="mn" name="usrnm" placeholder="Email address or phone number">
+                        <input type="password" class="pwd" id="pass" name="pas" placeholder="Password">
+                        <button type="submit" class="sub-btn" id="btn">Log in</button>
+                        <div class="fgt-lnk">
+                            <a href="nawBar.html" id="lnk">Forgotten account?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+       <script>
+        $(document).ready(function(){
+            $("#lgnForm").validate({
+                rules:{
+                    usrnm:{
+                        required:true,
+                        minlength:6
+                    },
+                    pas:{
+                        required:true,
+                        minlength:6
+                    }    
+                }
+            })
+        })
+       </script>
+    </body>
+</html>
